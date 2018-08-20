@@ -8,7 +8,7 @@ const customers: Record<string, Customer> = {
     loanId: 17,
   },
   2: {
-    id: 1,
+    id: 2,
     name: 'Petre Petashvili',
     loanId: 20,
   },
