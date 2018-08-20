@@ -39,7 +39,7 @@ export function getLoanAndCustomerByCustomerId(
   return getCustomerById(id).pipe(
     flatMap(customer => {
       if (customer === null) {
-        return of(null);
+        return of([null, null]);
       } else {
         const customer$ = of(customer);
         const loan$ = getLoanById(customer.loanId);
